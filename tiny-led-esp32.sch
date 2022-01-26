@@ -1017,4 +1017,52 @@ Text GLabel 1200 2850 2    50   Input ~ 0
 RX
 Text GLabel 1200 3050 2    50   Input ~ 0
 TX
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6219DFBD
+P 1000 4900
+F 0 "H1" H 950 5100 50  0000 L CNN
+F 1 "GND" V 850 4850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1000 4900 50  0001 C CNN
+F 3 "~" H 1000 4900 50  0001 C CNN
+	1    1000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 621A0917
+P 1300 4900
+F 0 "H2" H 1250 5100 50  0000 L CNN
+F 1 "5V" V 1150 4850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1300 4900 50  0001 C CNN
+F 3 "~" H 1300 4900 50  0001 C CNN
+	1    1300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5150 1000 5000
+Wire Wire Line
+	1300 5000 1300 5150
+$Comp
+L power:GND #PWR0101
+U 1 1 621B63E7
+P 1000 5150
+F 0 "#PWR0101" H 1000 4900 50  0001 C CNN
+F 1 "GND" H 1005 4977 50  0000 C CNN
+F 2 "" H 1000 5150 50  0001 C CNN
+F 3 "" H 1000 5150 50  0001 C CNN
+	1    1000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 621EC70E
+P 1300 5150
+F 0 "#PWR0102" H 1300 5000 50  0001 C CNN
+F 1 "+5V" H 1315 5323 50  0000 C CNN
+F 2 "" H 1300 5150 50  0001 C CNN
+F 3 "" H 1300 5150 50  0001 C CNN
+	1    1300 5150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

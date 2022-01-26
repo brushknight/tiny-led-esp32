@@ -948,10 +948,10 @@ Wire Wire Line
 Wire Wire Line
 	10100 3100 10700 3100
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP3
 U 1 1 6220D0D8
 P 1200 2850
-F 0 "TP?" V 1250 2900 50  0000 C CNN
+F 0 "TP3" V 1250 2900 50  0000 C CNN
 F 1 "TestPoint" V 1200 3200 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1400 2850 50  0001 C CNN
 F 3 "~" H 1400 2850 50  0001 C CNN
@@ -959,10 +959,10 @@ F 3 "~" H 1400 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP4
 U 1 1 622101B2
 P 1200 3050
-F 0 "TP?" V 1250 3100 50  0000 C CNN
+F 0 "TP4" V 1250 3100 50  0000 C CNN
 F 1 "TestPoint" V 1200 3400 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1400 3050 50  0001 C CNN
 F 3 "~" H 1400 3050 50  0001 C CNN
@@ -970,10 +970,10 @@ F 3 "~" H 1400 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP5
 U 1 1 62210565
 P 1200 3250
-F 0 "TP?" V 1250 3300 50  0000 C CNN
+F 0 "TP5" V 1250 3300 50  0000 C CNN
 F 1 "TestPoint" V 1200 3600 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1400 3250 50  0001 C CNN
 F 3 "~" H 1400 3250 50  0001 C CNN
@@ -981,10 +981,10 @@ F 3 "~" H 1400 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP6
 U 1 1 622109DC
 P 1200 3450
-F 0 "TP?" V 1250 3500 50  0000 C CNN
+F 0 "TP6" V 1250 3500 50  0000 C CNN
 F 1 "TestPoint" V 1200 3800 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1400 3450 50  0001 C CNN
 F 3 "~" H 1400 3450 50  0001 C CNN
@@ -992,10 +992,10 @@ F 3 "~" H 1400 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR019
 U 1 1 62210E49
 P 1200 3250
-F 0 "#PWR?" H 1200 3100 50  0001 C CNN
+F 0 "#PWR019" H 1200 3100 50  0001 C CNN
 F 1 "+3V3" H 1215 3423 50  0000 C CNN
 F 2 "" H 1200 3250 50  0001 C CNN
 F 3 "" H 1200 3250 50  0001 C CNN
@@ -1003,10 +1003,10 @@ F 3 "" H 1200 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR020
 U 1 1 6221278F
 P 1200 3450
-F 0 "#PWR?" H 1200 3200 50  0001 C CNN
+F 0 "#PWR020" H 1200 3200 50  0001 C CNN
 F 1 "GND" H 1205 3277 50  0000 C CNN
 F 2 "" H 1200 3450 50  0001 C CNN
 F 3 "" H 1200 3450 50  0001 C CNN
@@ -1017,4 +1017,52 @@ Text GLabel 1200 2850 2    50   Input ~ 0
 RX
 Text GLabel 1200 3050 2    50   Input ~ 0
 TX
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6219DFBD
+P 1000 4900
+F 0 "H1" H 950 5100 50  0000 L CNN
+F 1 "MountingHole_Pad" V 850 4850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1000 4900 50  0001 C CNN
+F 3 "~" H 1000 4900 50  0001 C CNN
+	1    1000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 621A0917
+P 1300 4900
+F 0 "H2" H 1250 5100 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1150 4850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1300 4900 50  0001 C CNN
+F 3 "~" H 1300 4900 50  0001 C CNN
+	1    1300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5150 1000 5000
+Wire Wire Line
+	1300 5000 1300 5150
+$Comp
+L power:GND #PWR0101
+U 1 1 621B63E7
+P 1000 5150
+F 0 "#PWR0101" H 1000 4900 50  0001 C CNN
+F 1 "GND" H 1005 4977 50  0000 C CNN
+F 2 "" H 1000 5150 50  0001 C CNN
+F 3 "" H 1000 5150 50  0001 C CNN
+	1    1000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 621EC70E
+P 1300 5150
+F 0 "#PWR?" H 1300 5000 50  0001 C CNN
+F 1 "+5V" H 1315 5323 50  0000 C CNN
+F 2 "" H 1300 5150 50  0001 C CNN
+F 3 "" H 1300 5150 50  0001 C CNN
+	1    1300 5150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -711,9 +711,7 @@ Connection ~ 2250 1200
 Wire Wire Line
 	2250 1200 2250 1400
 Wire Wire Line
-	1300 1200 1300 1550
-Wire Wire Line
-	1300 1600 1650 1600
+	1300 1200 1300 1350
 $Comp
 L power:GND #PWR010
 U 1 1 6204FBF0
@@ -749,9 +747,6 @@ F 3 "~" H 1500 1550 50  0001 C CNN
 	1    1300 1550
 	0    -1   -1   0   
 $EndComp
-Connection ~ 1300 1550
-Wire Wire Line
-	1300 1550 1300 1600
 NoConn ~ 1650 2800
 NoConn ~ 1650 2900
 NoConn ~ 1650 3000
@@ -780,7 +775,6 @@ NoConn ~ 2850 2200
 NoConn ~ 2850 2100
 NoConn ~ 2850 2000
 NoConn ~ 2850 1800
-NoConn ~ 2850 1600
 NoConn ~ 1650 1800
 NoConn ~ 1650 1900
 Text GLabel 2850 1900 2    50   Input ~ 0
@@ -1065,4 +1059,28 @@ F 3 "" H 1300 5150 50  0001 C CNN
 	1    1300 5150
 	-1   0    0    1   
 $EndComp
+Text GLabel 1650 1600 0    50   Input ~ 0
+EN
+Text GLabel 1150 1350 0    50   Input ~ 0
+EN
+Wire Wire Line
+	1150 1350 1300 1350
+Connection ~ 1300 1350
+Wire Wire Line
+	1300 1350 1300 1550
+Text GLabel 2850 1600 2    50   Input ~ 0
+IO0
+$Comp
+L Connector:TestPoint TP7
+U 1 1 62245454
+P 1200 3650
+F 0 "TP7" V 1250 3700 50  0000 C CNN
+F 1 "TestPoint" V 1200 4000 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1400 3650 50  0001 C CNN
+F 3 "~" H 1400 3650 50  0001 C CNN
+	1    1200 3650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1200 3650 2    50   Input ~ 0
+IO0
 $EndSCHEMATC
